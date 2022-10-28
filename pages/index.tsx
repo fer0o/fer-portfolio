@@ -1,12 +1,38 @@
 import Head from 'next/head'
+import Header from '../components/Header'
 
 export default function Home () {
   return (
-    <div>
+    <div className='bg-black text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-500/20 scrollbar-thumb-blue-900/80'>
       <Head>
-        <title>Create Next App</title>
+        <title>Fer's Portfolios</title>
       </Head>
-      <h1 className='text-3xl font-bold underline'>Hello world!</h1>
+      {/* Header */}
+      <Header />
+      {/* Hero */}
+      {/* <section id='hero' className='snap-center'>
+        <Hero />
+      </section> */}
+      {/* About */}
+      {/* <section id='about' className='snap-center'>
+        <About />
+      </section> */}
+      {/* Experience */}
+      {/* <section className='snap-center' id='experience'>
+        <Experience />
+      </section> */}
+      {/* Skills */}
+      {/* <section id='skills' className='snap-start'>
+        <Skills />
+      </section> */}
+      {/* Projects */}
+      {/* <section id='projects' className='snap-start'>
+        <Projects />
+      </section> */}
+      {/* Contact Me */}
+      {/* <section id='contact' className=' snap-center'>
+          <ContactMe />
+        </section> */}
     </div>
   )
 }

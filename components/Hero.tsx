@@ -29,7 +29,7 @@ function Hero ({}: Props) {
           Software Engineer
         </h2>
         <h1 className='text-5xl lg:text-6xl font-semibold px-10'>
-          <span className='text-lg mr-3'>{text}</span>
+          <span className='text-2xl mr-3'>{text}</span>
           <Cursor cursorColor='#80b3ff' />
         </h1>
         {/* about experience */}

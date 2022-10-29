@@ -3,10 +3,13 @@ import { SocialIcon } from 'react-social-icons'
 import { motion } from 'framer-motion'
 import { EnvelopeIcon } from '@heroicons/react/24/solid'
 import Link from 'next/link'
+import { Social } from '../typings'
 
-type Props = {}
+type Props = {
+  socials: Social[]
+}
 
-export default function Header ({}: Props) {
+export default function Header ({ socials }: Props) {
   return (
     <header className=' sticky top-0 p-5 flex items-start justify-between max-w-full z-20 xl:items-center '>
       <motion.div
@@ -16,28 +19,14 @@ export default function Header ({}: Props) {
         className=' flex flex-row items-center space-x-2'
       >
         {/* social icons */}
-
-        <SocialIcon
-          url='https://www.facebook.com/fer.medellin.cuevas/'
-          fgColor='gray'
-          bgColor='trasparent'
-        />
-        <SocialIcon
-          url='https://www.instagram.com/fer0osennin/?hl=en'
-          fgColor='gray'
-          bgColor='trasparent'
-        />
-
-        <SocialIcon
-          url='https://www.linkedin.com/in/fernando-medellin-cuevas/'
-          fgColor='gray'
-          bgColor='trasparent'
-        />
-        <SocialIcon
-          url='https://github.com/fer0o'
-          fgColor='gray'
-          bgColor='trasparent'
-        />
+        {socials.map(social => (
+          <SocialIcon
+            key={social._id}
+            url={social.url}
+            fgColor='gray'
+            bgColor='trasparent'
+          />
+        ))}
       </motion.div>
 
       <Link href='#contact'>

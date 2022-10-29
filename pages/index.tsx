@@ -27,7 +27,7 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
   return (
     <div className='bg-black text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-500/20 scrollbar-thumb-blue-900/80'>
       <Head>
-        <title>Fer's Portfolios</title>
+        <title>Fer&apos;s Portfolios</title>
       </Head>
       {/* Header */}
       <Header socials={socials} />

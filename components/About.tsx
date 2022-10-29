@@ -4,7 +4,7 @@ import { PageInfo } from '../typings'
 import { urlFor } from '../sanity'
 // https://pbs.twimg.com/profile_images/1097208044231057408/hhYbzbJh_400x400.jpg
 type Props = {
-  pageInfo: PageInfo[]
+  pageInfo: PageInfo
 }
 
 export default function About ({ pageInfo }: Props) {

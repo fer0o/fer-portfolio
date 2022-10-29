@@ -5,7 +5,7 @@ import { urlFor } from '../sanity'
 import { PageInfo } from '../typings'
 import BackgroundCircles from './BackgroundCircles'
 type Props = {
-  pageInfo: PageInfo[]
+  pageInfo: PageInfo
 }
 
 function Hero ({ pageInfo }: Props) {

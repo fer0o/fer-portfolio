@@ -32,6 +32,7 @@ export default function Projects ({ projects }: Props) {
               viewport={{ once: true }}
               src={urlFor(project?.image).url()}
               alt=''
+              className='w-auto h-96'
             />
             <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
               <h4 className='text-2xl font-semibold text-center uppercase'>

@@ -26,7 +26,7 @@ export default function About ({ pageInfo }: Props) {
         transition={{ duration: 1.2 }}
         whileInView={{ opacity: 1, x: 0 }}
         src={urlFor(pageInfo?.profilePic).url()}
-        className='-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]'
+        className='-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px] mt-16'
       />
       <div className='space-y-10 px-0 md:px-10'>
         <h4 className='text-4xl font-semibold'>

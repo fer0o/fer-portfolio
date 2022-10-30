@@ -32,9 +32,9 @@ export default function Projects ({ projects }: Props) {
               viewport={{ once: true }}
               src={urlFor(project?.image).url()}
               alt=''
-              className='w-auto h-96'
+              className='w-auto lg:h-96 h-45 mt-32'
             />
-            <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
+            <div className='space-y-10 px-0 md:px-10 max-w-6xl mb-10'>
               <h4 className='text-2xl font-semibold text-center uppercase'>
                 <span className='underline decoration-slate-50'>
                   Project {idx + 1} of {projects.length}:
@@ -46,7 +46,7 @@ export default function Projects ({ projects }: Props) {
               </p>
               <div className='flex text-center justify-center'>
                 <a
-                  className='text-xl text-center text-blue-500 underline'
+                  className='text-xl text-center text-blue-500 underline '
                   href={project?.linkToBuild}
                   target='_blank'
                   rel='noreferrer'

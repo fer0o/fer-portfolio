@@ -14,7 +14,8 @@ function Hero ({ pageInfo }: Props) {
       `Hi Im ${pageInfo?.name}`,
       'WebDesigner',
       'Working to convert me in Fullstack',
-      'Eat, Sleep, Code, Repeat!'
+      'Eat, Sleep, Code, Repeat!',
+      'Lear React'
     ],
     loop: true,
     delaySpeed: 2000

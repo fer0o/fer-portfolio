@@ -16,7 +16,7 @@ export default function Header ({ socials }: Props) {
         initial={{ x: -500, opacity: 0, scale: 0.5 }}
         animate={{ x: 0, opacity: 1, scale: 1 }}
         transition={{ duration: 1.5 }}
-        className=' flex flex-row items-center space-x-2'
+        className=' flex flex-row items-center lg:space-x-2'
       >
         {/* social icons */}
         {socials.map(social => (
@@ -36,10 +36,12 @@ export default function Header ({ socials }: Props) {
           transition={{ duration: 1.5 }}
           className='flex flex-row items-center text-gray-300 cursor-pointer space-x-2 mt-2 '
         >
-          <EnvelopeIcon className='text-gray-500 h-9 w-9 ' />
-          <p className='uppercase hidden md:inline-flex text-sm text-gray-400'>
-            Get In touch
-          </p>
+          <div className='flex flex-rows gap-8'>
+            <EnvelopeIcon className='text-gray-500 h-8 w-8' />
+            <p className='uppercase hidden md:inline-flex text-sm text-gray-400 m-2'>
+              Get In touch
+            </p>
+          </div>
         </motion.div>
       </Link>
     </header>

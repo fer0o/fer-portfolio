@@ -57,13 +57,13 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
       </section>
       <Link href='#hero'>
         <footer className='sticky bottom-5 w-full cursor-pointer'>
-          {/* <div className='flex items-center justify-center'>
+          <div className='flex items-center justify-center'>
             <img
-              src='https://scontent.fgdl9-1.fna.fbcdn.net/v/t31.18172-8/28515285_10215158260894176_3227784359906811773_o.jpg?_nc_cat=107&ccb=1-7&_nc_sid=174925&_nc_ohc=S5-DEyZr0UgAX-Wi7Pg&_nc_ht=scontent.fgdl9-1.fna&oh=00_AT8iMfUhrJRdM3zB_jHQW2ASGGz-gAHCNYyUgIk66hNPfg&oe=6378F0EA'
+              src='https://cdn-icons-png.flaticon.com/512/1946/1946488.png'
               alt=''
-              className='h-10 w-10 rounded-full filter grayscale hover:grayscale-0'
+              className='h-10 w-10 rounded-full filter grayscale hover:grayscale-0 bg-white'
             />
-          </div> */}
+          </div>
         </footer>
       </Link>
     </div>

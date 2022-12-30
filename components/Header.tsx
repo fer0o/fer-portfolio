@@ -38,7 +38,7 @@ export default function Header ({ socials }: Props) {
         >
           <div className='flex flex-rows gap-8'>
             <EnvelopeIcon className='text-gray-500 h-8 w-8' />
-            <p className='uppercase hidden md:inline-flex text-sm text-gray-400 m-2'>
+            <p className='uppercase hidden md:inline-flex text-sm text-gray-400 mt-2'>
               Get In touch
             </p>
           </div>

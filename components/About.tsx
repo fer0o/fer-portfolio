@@ -13,29 +13,36 @@ export default function About ({ pageInfo }: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className='flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-6xl px-10 justify-evenly mx-auto items-center'
+      className='flex flex-col relative h-screen text-center md:text-left  px-10 justify-evenly mx-auto items-center'
     >
       <h3 className='absolute top-24 uppercase tracking-[20px] text-2xl font-semibold '>
         About
       </h3>
-      <motion.img
-        initial={{
-          x: -200,
-          opacity: 0
-        }}
-        transition={{ duration: 1.2 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        src={urlFor(pageInfo?.profilePic).url()}
-        className='-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px] mt-16'
-      />
-      <div className='space-y-10 px-0 md:px-10'>
-        <h4 className='text-4xl font-semibold'>
-          {' '}
-          Here is a{' '}
-          <span className='underline decoration-blue-500'>little</span>{' '}
-          background
-        </h4>
-        <p className='text-base'>{pageInfo?.backgroundInformation}</p>
+      <div className='grid grid-cols-1 lg:grid-cols-2 mt-16 space-y-8 items-center '>
+        <div className='flex justify-center items-center'>
+          <motion.img
+            initial={{
+              x: -200,
+              opacity: 0
+            }}
+            transition={{ duration: 1.2 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            src={urlFor(pageInfo?.profilePic).url()}
+            className='lg:w-[500px] lg:h-[600px] w-48 h-48 rounded-full md:rounded-lg md:w-64 md:h-96 object-cover'
+            // className='-mb-20 md:mb-0 flex justify-center w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px] lg:mt-16 mt-48'
+          />
+        </div>
+        <div className='space-y-8 px-0 md:px-10'>
+          <h4 className='lg:text-4xl text-2xl font-semibold'>
+            {' '}
+            Here is a{' '}
+            <span className='underline decoration-blue-500'>little</span>{' '}
+            background
+          </h4>
+          <p className='lg:text-base text-sm '>
+            {pageInfo?.backgroundInformation}
+          </p>
+        </div>
       </div>
     </motion.div>
   )

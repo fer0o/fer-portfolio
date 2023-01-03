@@ -22,7 +22,7 @@ export default function ContactMe ({}: Props) {
         {' '}
         Contact Me
       </h3>
-      <div className='flex flex-col space-y-10 mt-20'>
+      <div className='flex flex-col lg:space-y-10 space-y-4 lg:mt-20 mt-16'>
         <div className='space-y-10'>
           <div className='flex items-center space-x-5 justify-center'>
             <PhoneIcon className='text-blue-900 h-7 w-7 animate-pulse' />
@@ -42,13 +42,13 @@ export default function ContactMe ({}: Props) {
               {...register('name')}
               placeholder='Name'
               type='text'
-              className='contactInput'
+              className='contactInput w-40'
             />
             <input
               {...register('email')}
               placeholder='Email'
               type='email'
-              className='contactInput'
+              className='contactInput w-40'
             />
           </div>
           <input

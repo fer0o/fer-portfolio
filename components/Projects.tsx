@@ -14,7 +14,7 @@ export default function Projects ({ projects }: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className='h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0'
+      className='h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0 space-y-8'
     >
       <h3 className='absolute top-24 uppercase tracking-[20px] text-white text-2xl'>
         Projects
@@ -32,16 +32,16 @@ export default function Projects ({ projects }: Props) {
               viewport={{ once: true }}
               src={urlFor(project?.image).url()}
               alt=''
-              className='w-auto lg:h-96 h-45 mt-32'
+              className='w-auto lg:h-96 h-45  object-cover '
             />
-            <div className='space-y-10 px-0 md:px-10 max-w-6xl mb-10'>
-              <h4 className='text-2xl font-semibold text-center uppercase'>
+            <div className='space-y-8 px-0 md:px-10 max-w-6xl'>
+              <h4 className='lg:text-2xl text-sm font-semibold text-center uppercase'>
                 <span className='underline decoration-slate-50'>
                   Project {idx + 1} of {projects.length}:
                 </span>{' '}
                 {project.title}
               </h4>
-              <p className='text-lg text-center md:text-left'>
+              <p className='lg:text-lg text-base text-center md:text-left'>
                 {project?.summary}
               </p>
               <div className='flex text-center justify-center'>

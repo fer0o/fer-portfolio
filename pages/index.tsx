@@ -25,7 +25,7 @@ type Props = {
 
 const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
   return (
-    <div className='bg-black text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-500/20 scrollbar-thumb-blue-900/80'>
+    <div className='bg-black text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 lg:scrollbar lg:scrollbar-track-gray-500/20 lg:scrollbar-thumb-blue-900/80'>
       <Head>
         <title>Fer&apos;s Portfolios</title>
       </Head>
@@ -61,7 +61,7 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
             <img
               src='https://cdn-icons-png.flaticon.com/512/1946/1946488.png'
               alt=''
-              className='h-10 w-10 rounded-full filter grayscale hover:grayscale-0 bg-white'
+              className='h-8 w-8 rounded-full filter grayscale hover:grayscale-0 bg-white'
             />
           </div>
         </footer>

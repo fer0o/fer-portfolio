@@ -61,7 +61,7 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
             <img
               src='https://cdn-icons-png.flaticon.com/512/1946/1946488.png'
               alt=''
-              className='h-8 w-8 rounded-full filter grayscale hover:grayscale-0 bg-white'
+              className='h-8 lg:h-12 w-8 lg:w-12 rounded-full filter grayscale hover:grayscale-0 bg-white'
             />
           </div>
         </footer>

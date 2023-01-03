@@ -18,11 +18,11 @@ export default function ContactMe ({}: Props) {
   }
   return (
     <div className='h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center'>
-      <h3 className='absolute top-24 uppercase tracking-[20px] text-white text-2xl'>
+      <h3 className='absolute top-24 uppercase tracking-[18px] lg:tracking-[20px] text-white text-2xl ml-4'>
         {' '}
         Contact Me
       </h3>
-      <div className='flex flex-col space-y-10 mt-20'>
+      <div className='flex flex-col lg:space-y-10 space-y-4 lg:mt-20 mt-16'>
         <div className='space-y-10'>
           <div className='flex items-center space-x-5 justify-center'>
             <PhoneIcon className='text-blue-900 h-7 w-7 animate-pulse' />
@@ -42,13 +42,13 @@ export default function ContactMe ({}: Props) {
               {...register('name')}
               placeholder='Name'
               type='text'
-              className='contactInput'
+              className='contactInput w-40'
             />
             <input
               {...register('email')}
               placeholder='Email'
               type='email'
-              className='contactInput'
+              className='contactInput w-40'
             />
           </div>
           <input
